@@ -19,7 +19,7 @@ section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img{
+#profile-img{
     max-width: 15%;
     height: auto;
 }
