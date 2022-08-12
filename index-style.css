@@ -6,14 +6,17 @@ body {
 }
 
 main{
-    margin: 50pt;
     margin-top: 30pt;
     height: fit-content;
 }
 
 section{
-    height: auto;
     padding-top: 50pt;
+}
+
+#about{
+    padding-top: 8em;
+    padding-bottom: 8em;
 }
 
 .name{
