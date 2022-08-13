@@ -10,8 +10,40 @@ main{
     height: fit-content;
 }
 
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur{
+    background: radial-gradient(black, transparent);
+    background-position: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.blur-buttons{
+    background: radial-gradient(black, transparent);
+    font-size: xx-large;
+}
+
+
 section{
     padding-top: 50pt;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
 
 #about{
