@@ -5,6 +5,29 @@ body {
     background-color: black;
 }
 
+section{
+    padding-top: 50pt;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#profile-img{
+    max-width: 15%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
+    color: white;
+}
+
 .header{
     width: 100vw;
     height: 100vh;
@@ -37,33 +60,13 @@ body {
 
 }
 
-
-section{
-    padding-top: 50pt;
-}
-
-#home{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-}
-
 #about{
     padding-top: 8em;
     padding-bottom: 8em;
 }
 
-.name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#profile-img{
-    max-width: 15%;
-    height: auto;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
-    color: white;
+#bio-pic{
+    width: 25%;
 }
 
 #contact{
@@ -76,4 +79,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 
 footer{
     margin-bottom: 50pt;
+}
+
+@media only screen and (max-width: 770px) {
+
+    #bio-container {
+        flex-direction: column; /* Items will be in a column instead of a row when screen width is under 770px */
+    }
 }
