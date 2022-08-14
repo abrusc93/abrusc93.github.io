@@ -2,7 +2,12 @@ ScrollReveal().reveal('.reveal', {
     delay: 200
 });
 
+ScrollReveal().reveal('.reveal-delay', { 
+    delay: 600
+});
+
 ScrollReveal().reveal('.reveal-slow', { 
+    delay: 300,
     duration: 3000,
     easing: 'ease-in'
 });
