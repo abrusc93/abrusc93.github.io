@@ -71,13 +71,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 }
 
 #left-prj-curtain{
-    background-image: linear-gradient(to right, rgb(88, 180, 255), transparent);
+    background: radial-gradient(at left, rgb(88, 180, 255) 20%, transparent 80%);
     background-size: cover;
+    background-position: center;
 }
 
 #right-prj-curtain{
-    background-image: linear-gradient(to left, rgb(88, 180, 255), transparent);
+    background: radial-gradient(at right, rgb(88, 180, 255) 20%, transparent 80%);
     background-size: cover;
+    background-position: center;
 }
 
 #contact{
