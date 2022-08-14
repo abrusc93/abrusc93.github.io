@@ -2,6 +2,11 @@ ScrollReveal().reveal('.reveal', {
     delay: 200
 });
 
+ScrollReveal().reveal('.reveal-slow', { 
+    duration: 3000,
+    easing: 'ease-in'
+});
+
 window.onscroll = () => {
     if((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
         var emailDiv = document.getElementById("email-div");
