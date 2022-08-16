@@ -5,6 +5,10 @@ body {
     background-color: black;
 }
 
+nav a{
+    width: fit-content;
+}
+
 section{
     padding-top: 50pt;
 }
