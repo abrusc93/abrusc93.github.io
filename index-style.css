@@ -98,9 +98,14 @@ footer{
     margin-bottom: 50pt;
 }
 
-@media only screen and (max-width: 770px) {
+/* Mobile View - When screen width is less than 768px */
+@media only screen and (max-width: 768px) {
 
     #bio-container {
-        flex-direction: column; /* Items will be in a column instead of a row when screen width is under 770px */
+        flex-direction: column;
+    }
+
+    .project-image{
+        align-self: flex-start;
     }
 }
