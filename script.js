@@ -25,3 +25,9 @@ window.onscroll = () => {
         toTop.classList.add("animate__animated", "animate__bounce", "animate__delay-5s", "animate__slow", "animate__repeat-2");
     }
 }
+
+$(window).resize(function(){
+    if($(window).width()<768){
+     $('nav ul').toggleClass('position-absolute top-50 start-50 translate-middle');
+    }
+});
