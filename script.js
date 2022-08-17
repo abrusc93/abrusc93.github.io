@@ -30,4 +30,7 @@ $(window).resize(function(){
     if($(window).width()<768){
      $('nav ul').toggleClass('position-absolute top-50 start-50 translate-middle');
     }
+    if($(window).width()>768){
+        $('nav ul').toggleClass('position-absolute top-50 start-50 translate-middle');
+       }
 });
