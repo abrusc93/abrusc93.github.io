@@ -5,10 +5,6 @@ body {
     background-color: black;
 }
 
-nav a{
-    width: fit-content;
-}
-
 section{
     padding-top: 50pt;
 }
@@ -109,4 +105,10 @@ footer{
         align-self: flex-start;
     }
 
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+    #logo-name{
+        display: none;
+    }
 }
