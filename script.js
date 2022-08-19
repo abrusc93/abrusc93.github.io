@@ -41,3 +41,7 @@ if($(window).width()<768){
 if($(window).width()>768){
     $('nav ul').addClass('position-absolute top-50 start-50 translate-middle nav-pills');
 }
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
