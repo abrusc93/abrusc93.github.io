@@ -29,17 +29,21 @@ window.onscroll = () => {
 $(window).resize(function(){
     if($(window).width()<768){
      $('nav ul').removeClass('position-absolute top-50 start-50 translate-middle nav-pills');
+     $('nav').removeClass('animate__animated');
     }
     if($(window).width()>768){
         $('nav ul').addClass('position-absolute top-50 start-50 translate-middle nav-pills');
+        $('nav').addClass('animate__animated');
     }
 });
 
 if($(window).width()<768){
     $('nav ul').removeClass('position-absolute top-50 start-50 translate-middle nav-pills');
+    $('nav').removeClass('animate__animated');
 }
 if($(window).width()>768){
     $('nav ul').addClass('position-absolute top-50 start-50 translate-middle nav-pills');
+    $('nav').addClass('animate__animated');
 }
 
 $('.navbar-nav>li>a').on('click', function(){
