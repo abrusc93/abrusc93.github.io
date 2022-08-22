@@ -6,10 +6,10 @@ body {
 }
 
 section{
-    padding-top: 50pt;
+    padding-top: 68px;
 }
 
-#home{
+.home-container{
     display: flex;
     justify-content: center;
     padding-top: 0pt;
@@ -60,11 +60,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 
 }
 
-#about{
-    padding-top: 8em;
-    padding-bottom: 8em;
-}
-
 #bio-pic{
     width: 25%;
 }
@@ -79,10 +74,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
     background: radial-gradient(at right, rgb(88, 180, 255) 20%, transparent 80%);
     background-size: cover;
     background-position: center;
-}
-
-#contact{
-    height: 25vh;
 }
 
 #email-div, #linkedin-div, #github-div{

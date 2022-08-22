@@ -78,41 +78,42 @@
   
   <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-    <nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark sticky-top animate__animated animate__bounceInDown py-1">
-      <div class="container">
-        <div class="navbar-brand lh-1 p-0 m-0 d-flex align-items-center fs-4" style="font-family: 'Prompt', sans-serif;">
-          <img class="navbar-brand" src="Images/favicon/apple-touch-icon.png" width="50" height="auto">
-          <div class="flex-end" id="logo-name">Vincent<br/>Abruscato</div>
+    <!-- Home Section -->
+    <section id="home">
+      <nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark fixed-top animate__animated animate__bounceInDown py-1">
+        <div class="container">
+          <div class="navbar-brand lh-1 p-0 m-0  fs-4" style="font-family: 'Prompt', sans-serif;">
+            <a class="d-flex align-items-center" href="https://vabruscato.me" style="text-decoration: none;">
+              <img class="navbar-brand" src="Images/favicon/apple-touch-icon.png" width="50" height="auto">
+              <div class="flex-end text-white" id="logo-name">Vincent<br/>Abruscato</div>
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mb-2 mb-lg-0 nav-pills fs-5 position-absolute top-50 start-50 translate-middle text-nowrap">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav mb-2 mb-lg-0 nav-pills fs-5 position-absolute top-50 start-50 translate-middle text-nowrap">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
 
-    <main>
-
-      <!-- Home Section -->
-      <section id="home">
+      <div class="home-container">
         <div class="banner animate__animated animate__fadeIn">
           <div class="banner-blur">
             <h1 class="display-4 name animate__animated animate__fadeIn animate__slower"><center>Vincent Abruscato</center></h1>
@@ -126,207 +127,204 @@
             <a class="social-button-background animate__animated animate__heartBeat animate__delay-5s" href="https://www.github.com/abrusc93/" target="_blank"><i class="bi bi-github"></i></a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <br/>
+    </section>
 
-      <!-- About Section -->
-      <section class="reveal-delay container" id="about">
-        <div class="d-flex justify-content-between align-items-center border border-primary border-4 rounded" id="bio-container">
-          <img src="Images/bio.jpg" class="border-right rounded" id="bio-pic">
-          <br/>
-          <div class="d-flex flex-column align-items-center">
-            <h1 class="h3 text-center text-decoration-underline">Bio</h1>
-            <p class="p-3 lead text-justify">
-              I am currently a senior computer science major at Rowan University in New Jersey. 
-              I have earned my associate's degree from Rowan College of South Jersey Cumberland 
-              and am now working towards earning my bachelor's degree. When I am not coding or studying,
-              I enjoy walking outdoors and spending time with my cat.
-              I enjoy programming and problem solving, and possess the patience and skills that are necessary 
-              to satisfy project requirements. I have experience from taking part in team projects which have 
-              strengthened my programming skills and taught me about agile methodologies. I am excited to 
-              enter the field as either a web developer or software developer.
-            </p>
-          </div>
+    <!-- About Section -->
+    <section class="reveal-delay container" id="about">
+
+      <div class="d-flex justify-content-between align-items-center border border-primary border-4 rounded" id="bio-container">
+        <img src="Images/bio.jpg" class="border-right rounded" id="bio-pic">
+        <br/>
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="h3 text-center text-decoration-underline">Bio</h1>
+          <p class="p-3 lead">
+            I am currently a senior computer science major at Rowan University in New Jersey. 
+            I have earned my associate's degree from Rowan College of South Jersey Cumberland 
+            and am now working towards earning my bachelor's degree. When I am not coding or studying,
+            I enjoy walking outdoors and spending time with my cat.
+            I enjoy programming and problem solving, and possess the patience and skills that are necessary 
+            to satisfy project requirements. I have experience from taking part in team projects which have 
+            strengthened my programming skills and taught me about agile methodologies. I am excited to 
+            enter the field as either a web developer or software developer.
+          </p>
         </div>
-      </section>
+      </div>
 
-      <br/>
+    </section>
 
-      <!-- Projects Section -->
-      <section class="container-fluid px-0" id="projects">
-        <div class="d-flex justify-content-between flex-row">
-          <div id="left-prj-curtain" class="w-25 reveal-slow"></div>
-            <div class="container mx-0 px-0 d-flex justify-content-center flex-column">
-              <h1 class="h3 text-center text-decoration-underline">Projects</h1>
-              <br/>
-              <div>
-                
-                <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-success rounded p-3">
-                  <div class="w-75">
-                    <h5>MusicHoot</h5><h5><small class="text-muted">Spring 2022</small></h5>
-                    <p class="text-wrap text-justify">I worked on this senior capstone project as part of a team at Rowan University.
-                      MusicHoot is a music recommendation web application with a social aspect built using the Django framework.
-                      It allows users with common music interests to connect and share songs and playlists.
-                      Users can also find suggestions for new music that they might be interested in based on listening history.
-                    </p>
-                    <a href="https://github.com/Senior-Project-Section-3-Team-4/musichoot" target="_blank">
-                      <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
-                  </div>
+    <!-- Projects Section -->
+    <section class="container-fluid px-0" id="projects">
 
-                  <svg xmlns="http://www.w3.org/2000/svg" max-width="220" height="220" fill="gray" class="project-image bi bi-headphones d-flex flex-end" viewBox="0 0 15 15" 
-                    style="max-width: 20%; height: auto;">
-                    <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
-                  </svg>
+      <div class="d-flex justify-content-between flex-row">
+        <div id="left-prj-curtain" class="w-25 reveal-slow"></div>
+          <div class="container mx-0 px-0 d-flex justify-content-center flex-column">
+            <h1 class="h3 text-center text-decoration-underline">Projects</h1>
+            <br/>
+            <div>
+              
+              <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-success rounded p-3">
+                <div class="w-75">
+                  <h5>MusicHoot</h5><h5><small class="text-muted">Spring 2022</small></h5>
+                  <p class="text-wrap text-justify">I worked on this senior capstone project as part of a team at Rowan University.
+                    MusicHoot is a music recommendation web application with a social aspect built using the Django framework.
+                    It allows users with common music interests to connect and share songs and playlists.
+                    Users can also find suggestions for new music that they might be interested in based on listening history.
+                  </p>
+                  <a href="https://github.com/Senior-Project-Section-3-Team-4/musichoot" target="_blank">
+                    <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
                 </div>
 
-                <br/>
-
-                <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-warning rounded p-3">
-                  <div class="w-75">
-                    <h5>Pet Central</h5><h5><small class="text-muted">Spring 2022</small></h5>
-                    <p class="text-wrap text-justify">I created this website to fulfill the project rerquirement for the introduction to web programming course
-                      I took in the spring 2022 semester at Rowan University. This was the very first website I created completely on my own!
-                      It is a simple website that contains information about common household pets.
-                      It demonstrates my knowledge of HTML, CSS, and JavaScript, and makes use of the jQuery and jQuery UI frameworks.
-                    </p>
-                    <a href="http://elvis.rowan.edu/~abrusc93/WebProgramming/PetCentral/" target="_blank">
-                      <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-box-arrow-up-right"></i> Check it out!</button></a>
-                  </div>
-
-                  <img src="Images/paw-logo.jpeg" class="project-image rounded float-end" style="max-width: 20%; height: auto;">
-                </div>
-
-                <br/>
-
-                <div class="project reveal d-flex justify-content-between align-items-center rounded p-3" style="border: solid 3px purple;">
-                  <div class="w-75">
-                    <h5>Software Inventory Tool</h5><h5><small class="text-muted">Fall 2021</small></h5>
-                    <p class="text-wrap text-justify">Lockheed Martin sponsored group project for Software Engineering I course at Rowan University.
-                      The software inventory tool (SIEVE) detects vulnerabilities in the applications in a computers file system. 
-                      The SIEVE uses the NVD database to search for any programs the user has selected to be scanned.
-                    </p>
-                    <a href="http://elvis.rowan.edu/~abrusc93/WebProgramming/PetCentral/" target="_blank">
-                      <a href="https://github.com/Domvel55/Software-Inventory-Tool-SWENG-1-4" target="_blank">
-                        <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
-                  </div>
-
-                  <img src="Images/SIEVE.png" class="project-image float-end" style="max-width: 20%; height: auto;">
-                </div>
-
-                <br/>
-
-                <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-danger rounded p-3">
-                  <div class="w-75">
-                    <h5>Car Wash Simulation</h5><h5><small class="text-muted">Fall 2019</small></h5>
-                    <p class="text-wrap text-justify">Group project for Intermediate Java course at Rowan College of South Jersey Cumberland.
-                      Modeled possible configurations for a car wash in which customers enter via two or more lanes with one single wash tunnel.
-                      Objectives were to identify optimal throughput using queues and mathematically model solutions in addition to simulation.
-                      Components of this project consist of the controller, car generator, car, lane/queue, order entry, gate, tunnel, and GUI. 
-                    </p>
-                      <a href="https://github.com/Wobblagated/CarWashProject" target="_blank">
-                        <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
-                  </div>
-
-                  <img src="Images/car-wash.jpg" class="project-image rounded float-end" style="max-width: 20%; height: auto;">
-                </div>
-
+                <svg xmlns="http://www.w3.org/2000/svg" max-width="220" height="220" fill="gray" class="project-image bi bi-headphones d-flex flex-end" viewBox="0 0 15 15" 
+                  style="max-width: 20%; height: auto;">
+                  <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                </svg>
               </div>
+
+              <br/>
+
+              <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-warning rounded p-3">
+                <div class="w-75">
+                  <h5>Pet Central</h5><h5><small class="text-muted">Spring 2022</small></h5>
+                  <p class="text-wrap text-justify">I created this website to fulfill the project rerquirement for the introduction to web programming course
+                    I took in the spring 2022 semester at Rowan University. This was the very first website I created completely on my own!
+                    It is a simple website that contains information about common household pets.
+                    It demonstrates my knowledge of HTML, CSS, and JavaScript, and makes use of the jQuery and jQuery UI frameworks.
+                  </p>
+                  <a href="http://elvis.rowan.edu/~abrusc93/WebProgramming/PetCentral/" target="_blank">
+                    <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-box-arrow-up-right"></i> Check it out!</button></a>
+                </div>
+
+                <img src="Images/paw-logo.jpeg" class="project-image rounded float-end" style="max-width: 20%; height: auto;">
+              </div>
+
+              <br/>
+
+              <div class="project reveal d-flex justify-content-between align-items-center rounded p-3" style="border: solid 3px purple;">
+                <div class="w-75">
+                  <h5>Software Inventory Tool</h5><h5><small class="text-muted">Fall 2021</small></h5>
+                  <p class="text-wrap text-justify">Lockheed Martin sponsored group project for Software Engineering I course at Rowan University.
+                    The software inventory tool (SIEVE) detects vulnerabilities in the applications in a computers file system. 
+                    The SIEVE uses the NVD database to search for any programs the user has selected to be scanned.
+                  </p>
+                  <a href="http://elvis.rowan.edu/~abrusc93/WebProgramming/PetCentral/" target="_blank">
+                    <a href="https://github.com/Domvel55/Software-Inventory-Tool-SWENG-1-4" target="_blank">
+                      <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
+                </div>
+
+                <img src="Images/SIEVE.png" class="project-image float-end" style="max-width: 20%; height: auto;">
+              </div>
+
+              <br/>
+
+              <div class="project reveal d-flex justify-content-between align-items-center border border-3 border-danger rounded p-3">
+                <div class="w-75">
+                  <h5>Car Wash Simulation</h5><h5><small class="text-muted">Fall 2019</small></h5>
+                  <p class="text-wrap text-justify">Group project for Intermediate Java course at Rowan College of South Jersey Cumberland.
+                    Modeled possible configurations for a car wash in which customers enter via two or more lanes with one single wash tunnel.
+                    Objectives were to identify optimal throughput using queues and mathematically model solutions in addition to simulation.
+                    Components of this project consist of the controller, car generator, car, lane/queue, order entry, gate, tunnel, and GUI. 
+                  </p>
+                    <a href="https://github.com/Wobblagated/CarWashProject" target="_blank">
+                      <button type="button" class="btn btn-primary rounded-pill"><i class="bi bi-github"></i> Check it out!</button></a>
+                </div>
+
+                <img src="Images/car-wash.jpg" class="project-image rounded float-end" style="max-width: 20%; height: auto;">
+              </div>
+
             </div>
-          <div id="right-prj-curtain" class="w-25 reveal-slow"></div>
-        </div>
-      </section>
+          </div>
+        <div id="right-prj-curtain" class="w-25 reveal-slow"></div>
+      </div>
+
+    </section>
+
+    <!-- Resume Section -->
+    <section class="reveal container" id="resume">
+
+      <h1 class="h3 text-center text-decoration-underline">Resume</h1>
+      <div class="h4 pb-2 mb-4  border-bottom border-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+          <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+          <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+        </svg> Education
+      </div>
+      <div class="d-flex justify-content-between">
+      <h5>Bachelor’s in Computer Science</h5><h5><small class="text-muted">Anticipated December 2022</small></h5>
+      </div>
+      <h5><small class="text-muted">Rowan University, Glassboro, NJ</small></h5>
+      <br/>
+      <div class="d-flex justify-content-between">
+        <h5>Associate in Computer Science</h5><h5><small class="text-muted">May 2021</small></h5>
+      </div>
+      <h5><small class="text-muted">Rowan College of South Jersey, Vineland, NJ</small></h5>
+      <br/>
+      <br/>
+      <div class="h4 pb-2 mb-4  border-bottom border-primary">
+        <i class="bi bi-briefcase"></i> Work Experience
+      </div>
+      <div class="d-flex justify-content-between">
+      <h5>File Clerk</h5><h5><small class="text-muted">November 2020 to Present</small></h5>
+      </div>
+      <h5><small class="text-muted">Rone & Kowalski, LLC, Milmay, NJ</small></h5>
+      <br/>
+      <div class="d-flex justify-content-between">
+        <h5>Data Entry Clerk</h5><h5><small class="text-muted">June 2018 to September 2019</small></h5>
+      </div>
+      <h5><small class="text-muted">Joffe Millwork & Supply Co., Vineland, NJ</small></h5>
+      <br/>
+      <br/>
+      <div class="h4 pb-2 mb-4  border-bottom border-primary"> 
+        <i class="bi bi-check-circle"></i> Skills
+      </div>
+      <h5><i class="bi bi-code"></i> Languages <i class="bi bi-code-slash"></i>: <small class="text-muted">Ada, C, C++, CSS, HTML, Java, MySQL, PHP, Prolog, Python, 
+        Scheme, Swift</small></h5>
+      <h5><i class="bi bi-terminal"></i> OS, Environments, and Software: <small class="text-muted">BlueJ, Eclipse, Git, GitHub, iOS, Linux, MacOS, NetBeans, 
+        PyCharm, Unix, Visual Studio, XCode</small></h5>
+      <h5><i class="bi bi-journal-code"></i> Frameworks: <small class="text-muted">Bootstrap, Django, JavaScript, jQuery, jQuery UI, Scrum </small></h5>
 
       <br/>
-
-      <!-- Resume Section -->
-      <section class="reveal container" id="resume">
-        <h1 class="h3 text-center text-decoration-underline">Resume</h1>
-        <div class="h4 pb-2 mb-4  border-bottom border-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
-          </svg> Education
-        </div>
-        <div class="d-flex justify-content-between">
-        <h5>Bachelor’s in Computer Science</h5><h5><small class="text-muted">Anticipated December 2022</small></h5>
-        </div>
-        <h5><small class="text-muted">Rowan University, Glassboro, NJ</small></h5>
-        <br/>
-        <div class="d-flex justify-content-between">
-          <h5>Associate in Computer Science</h5><h5><small class="text-muted">May 2021</small></h5>
-        </div>
-        <h5><small class="text-muted">Rowan College of South Jersey, Vineland, NJ</small></h5>
-        <br/>
-        <br/>
-        <div class="h4 pb-2 mb-4  border-bottom border-primary">
-          <i class="bi bi-briefcase"></i> Work Experience
-        </div>
-        <div class="d-flex justify-content-between">
-        <h5>File Clerk</h5><h5><small class="text-muted">November 2020 to Present</small></h5>
-        </div>
-        <h5><small class="text-muted">Rone & Kowalski, LLC, Milmay, NJ</small></h5>
-        <br/>
-        <div class="d-flex justify-content-between">
-          <h5>Data Entry Clerk</h5><h5><small class="text-muted">June 2018 to September 2019</small></h5>
-        </div>
-        <h5><small class="text-muted">Joffe Millwork & Supply Co., Vineland, NJ</small></h5>
-        <br/>
-        <br/>
-        <div class="h4 pb-2 mb-4  border-bottom border-primary"> 
-          <i class="bi bi-check-circle"></i> Skills
-        </div>
-        <h5><i class="bi bi-code"></i> Languages <i class="bi bi-code-slash"></i>: <small class="text-muted">Ada, C, C++, CSS, HTML, Java, MySQL, PHP, Prolog, Python, 
-          Scheme, Swift</small></h5>
-        <h5><i class="bi bi-terminal"></i> OS, Environments, and Software: <small class="text-muted">BlueJ, Eclipse, Git, GitHub, iOS, Linux, MacOS, NetBeans, 
-          PyCharm, Unix, Visual Studio, XCode</small></h5>
-        <h5><i class="bi bi-journal-code"></i> Frameworks: <small class="text-muted">Bootstrap, Django, JavaScript, jQuery, jQuery UI, Scrum </small></h5>
-
-        <br/>
-        <br/>
-
-        <div class="d-flex justify-content-center">
-          <a style="text-decoration: none;" href="https://vabruscato.me/resume.pdf" download="Vincent Abruscato - Resume" target="_blank">
-            <button type="button" class="btn btn-primary fs-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
-              </svg>
-              Download CV
-            </button>
-          </a>
-        </div>
-      </section>
-
       <br/>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="d-flex justify-content-evenly border-top border-bottom border-5 pb-3 text-center text-break text-wrap" id="contact-info-div">
-          <div class="d-flex flex-column align-items-center" id="email-div">
-            <a class="fw-bold" href="mailto:vincent@vabruscato.me"><i class="fs-4 bi bi-envelope"></i></a>
-            <br/>
-            <h5 class="text-secondary">Email Me</h5>
-            <a class="text-white" href="mailto:vincent@vabruscato.me">vincent@vabruscato.me</a>
-          </div>
-          <div class="d-flex flex-column align-items-center" id="linkedin-div">
-            <a href="https://www.linkedin.com/in/vabruscato/" target="_blank"><i class="fs-4 bi bi-linkedin"></i></a>
-            <br/>
-            <h5 class="text-secondary">Connect on LinkedIn</h5>
-            <a class="text-white" href="https://www.linkedin.com/in/vabruscato/" target="_blank">LinkedIn Profile</a>
-          </div>
-          <div class="d-flex flex-column align-items-center" id="github-div">
-            <a href="https://www.github.com/abrusc93/" target="_blank"><i class="fs-4 bi bi-github"></i></a>
-            <br/>
-            <h5 class="text-secondary">GitHub</h5>
-            <a class="text-white" href="https://www.github.com/abrusc93/" target="_blank">GitHub Profile</a>
-          </div>
+      <div class="d-flex justify-content-center">
+        <a style="text-decoration: none;" href="https://vabruscato.me/resume.pdf" download="Vincent Abruscato - Resume" target="_blank">
+          <button type="button" class="btn btn-primary fs-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+            </svg>
+            Download CV
+          </button>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+      <div class="d-flex justify-content-evenly border-top border-bottom border-5 pb-3 text-center text-break text-wrap" id="contact-info-div">
+        <div class="d-flex flex-column align-items-center" id="email-div">
+          <a class="fw-bold" href="mailto:vincent@vabruscato.me"><i class="fs-4 bi bi-envelope"></i></a>
+          <br/>
+          <h5 class="text-secondary">Email Me</h5>
+          <a class="text-white" href="mailto:vincent@vabruscato.me">vincent@vabruscato.me</a>
         </div>
-      </section>
+        <div class="d-flex flex-column align-items-center" id="linkedin-div">
+          <a href="https://www.linkedin.com/in/vabruscato/" target="_blank"><i class="fs-4 bi bi-linkedin"></i></a>
+          <br/>
+          <h5 class="text-secondary">Connect on LinkedIn</h5>
+          <a class="text-white" href="https://www.linkedin.com/in/vabruscato/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="d-flex flex-column align-items-center" id="github-div">
+          <a href="https://www.github.com/abrusc93/" target="_blank"><i class="fs-4 bi bi-github"></i></a>
+          <br/>
+          <h5 class="text-secondary">GitHub</h5>
+          <a class="text-white" href="https://www.github.com/abrusc93/" target="_blank">GitHub Profile</a>
+        </div>
+      </div>
 
-    </main>
-
-    <br/>
-    <br/>
+    </section>
 
     <footer class="container pt-5">
 
