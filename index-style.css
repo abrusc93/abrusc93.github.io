@@ -31,7 +31,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 .banner{
     width: 100vw;
     height: 100vh;
-    background-color: skyblue;
     background-image: url(Images/banner.webp);
     background-position: center;
     background-size: cover;
