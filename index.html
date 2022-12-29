@@ -253,9 +253,11 @@
       <h6><small class="text-muted">Relevant Coursework: Artificial Intelligence, Computer Laboratory Techniques, Computers and Society, Computer Organization, Cyber Security: Fundamentals, Principles and Applications, Data Structures and Algorithms, Design and Analysis of Algorithms, Foundations of Computer Science, Human-Computer Interaction, Introduction to Data Mining, Operating Systems, Programming Languages, Software Engineering I, Technical Presentations, Web Programming</small></h6>
       <br/>
       <div class="d-flex justify-content-between">
-        <a style="text-decoration: none;" href="Images/associate-degree.jpg" download="Vincent Abruscato - Associate in Computer Science" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/associate-degree.jpg' class='img-thumbnail' />">
-          <h5>Associate in Computer Science</h5>
-        </a>
+        <span data-bs-toggle="modal" data-bs-target="#photoDisplayModal" data-bs-image="Images/associate-degree.jpg">
+          <a style="text-decoration: none;" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/associate-degree.jpg' class='img-thumbnail' />">
+            <h5>Associate in Computer Science</h5>
+          </a>
+        </span>
         <h5 style="text-align: right;"><small class="text-muted">May 2021</small></h5>
       </div>
       <h5><small class="text-muted">Rowan College of South Jersey, Vineland, NJ</small></h5>
@@ -290,17 +292,21 @@
         <i class="bi bi-award"></i> Honors & Awards
       </div>
       <div class="d-flex justify-content-between">
-        <a style="text-decoration: none;" href="Images/magna-cum-laude.jpg" download="Vincent Abruscato - Magna Cum Laude" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/magna-cum-laude.jpg' class='img-thumbnail' />">
-          <h5>Magna Cum Laude</h5>
-        </a>
+        <span data-bs-toggle="modal" data-bs-target="#photoDisplayModal" data-bs-image="Images/magna-cum-laude.jpg">
+          <a style="text-decoration: none;" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/magna-cum-laude.jpg' class='img-thumbnail' />">
+            <h5>Magna Cum Laude</h5>
+          </a>
+        </span>
         <h5 style="text-align: right;"><small class="text-muted">June 2018</small></h5>
       </div>
       <h5><small class="text-muted">Vineland High School, Vineland, NJ</small></h5>
       <br/>
       <div class="d-flex justify-content-between">
-        <a style="text-decoration: none;" href="Images/world-language-honor.jpg" download="Vincent Abruscato - World Language Honor Society" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/world-language-honor.jpg' class='img-thumbnail' />">
-          <h5>World Language National Honor Society</h5>
-        </a>
+        <span data-bs-toggle="modal" data-bs-target="#photoDisplayModal" data-bs-image="Images/world-language-honor.jpg">
+          <a style="text-decoration: none;" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-custom-class="bg-secondary rounded p-1" data-bs-title="<img src='Images/world-language-honor.jpg' class='img-thumbnail' />">
+            <h5>World Language National Honor Society</h5>
+          </a>
+        </span>
         <h5 style="text-align: right;"><small class="text-muted">May 2017</small></h5>
       </div>
       <h5><small class="text-muted">Vineland High School, Vineland, NJ</small></h5>
@@ -317,6 +323,19 @@
             Download CV
           </button>
         </a>
+      </div>
+
+      <div class="modal fade" id="photoDisplayModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img id="modalImage" src="" class="img-fluid" loading="lazy"/>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
