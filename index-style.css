@@ -75,10 +75,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
     background-position: center;
 }
 
-.custom-tooltip{
-    --bs-tooltip-bg: var(--bs-secondary);
-}
-
 #email-div, #linkedin-div, #github-div{
     padding-top: 10pt;
 }
