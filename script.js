@@ -35,20 +35,24 @@ $(window).resize(function(){
     if($(window).width()<768){
      $('nav ul').removeClass('position-absolute top-50 start-50 translate-middle nav-pills');
      $('nav').removeClass('animate__animated');
+     $('.prj-content').removeClass('w-75');
     }
     if($(window).width()>768){
         $('nav ul').addClass('position-absolute top-50 start-50 translate-middle nav-pills');
         $('nav').addClass('animate__animated');
+        $('.prj-content').addClass('w-75');
     }
 });
 
 if($(window).width()<768){
     $('nav ul').removeClass('position-absolute top-50 start-50 translate-middle nav-pills');
     $('nav').removeClass('animate__animated');
+    $('.prj-content').removeClass('w-75');
 }
 if($(window).width()>768){
     $('nav ul').addClass('position-absolute top-50 start-50 translate-middle nav-pills');
     $('nav').addClass('animate__animated');
+    $('.prj-content').addClass('w-75');
 }
 
 $('.navbar-nav>li>a').on('click', function(){
