@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
     background-position: center;
     width: fit-content;
     height: fit-content;
+    padding-bottom: 1em;
 }
 
 .social-button{
@@ -81,6 +82,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 
 footer{
     margin-bottom: 50pt;
+}
+
+#contactModal .modal-content{
+    background-color: black;
 }
 
 /*When screen width is greater than 768px */

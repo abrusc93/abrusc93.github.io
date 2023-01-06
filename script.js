@@ -62,8 +62,8 @@ $('.navbar-nav>li>a').on('click', function(){
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-const exampleModal = document.getElementById('photoDisplayModal')
-exampleModal.addEventListener('show.bs.modal', event => {
+const photoDisplayModal = document.getElementById('photoDisplayModal')
+photoDisplayModal.addEventListener('show.bs.modal', event => {
   // Button that triggered the modal
   const button = event.relatedTarget
   // Extract info from data-bs-* attributes
