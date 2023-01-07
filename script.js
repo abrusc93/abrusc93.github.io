@@ -83,6 +83,5 @@ $('#contactForm').submit(function () {
     $('#contactSuccessAlert').addClass('show');
     setTimeout(function () {      
         $('#contactSuccessAlert').removeClass('show');         
-    }, 8000);
-    return false;
+    }, 10000);
 });
