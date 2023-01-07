@@ -109,7 +109,7 @@
                 <a class="nav-link" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" style="cursor: pointer;">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -388,6 +388,54 @@
       </div>
 
     </section>
+
+    <div class="fixed-bottom ms-auto text-primary" data-bs-toggle="modal" data-bs-target="#contactModal" style="cursor: pointer; font-size: 28pt; width: fit-content;">
+      <i id="messageButton" class="bi bi-chat-right-text-fill"></i>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content rounded border border-3 border-secondary">
+          <div class="modal-header border-0">
+            <h5>Get in Touch<br/><small class="text-secondary">Leave your message and I'll get back to you shortly.</small></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm" action="https://formsubmit.co/vabruscato@gmail.com" method="POST">
+              <label for="name"> Name *</label>
+              <input type="text" id="name" name="name" class="rounded-pill" required>
+          
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" class="rounded-pill" required>
+          
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required style="height:200px"></textarea>
+
+              <label for="source">How did you find me?</label>
+              <br/>
+              <select id="source" name="source" class="rounded-pill">
+                <option disabled selected>Choose</option>
+                <option value="indeed">Indeed</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="monster">Monster</option>
+                <option value="ziprecruiter">ZipRecruiter</option>
+                <option value="socialmedia">Social Media</option>
+                <option value="other">Other</option>
+              </select>
+              <br/>
+              <div class="d-flex justify-content-center">
+                <input id="contactFormSubmit" class="rounded-pill" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-success alert-dismissible fade fixed-top ms-auto" role="alert" id="contactSuccessAlert">
+      <div class="float-start"><i class="bi bi-check-circle-fill"></i> Message Sent!</div>
+      <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
     <footer class="container pt-5">
 

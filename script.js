@@ -71,3 +71,18 @@ photoDisplayModal.addEventListener('show.bs.modal', event => {
   // Update the modal's img src attribute.
   document.getElementById("modalImage").src = imgSrc;
 })
+
+const contactModal = document.getElementById('contactModal')
+contactModal.addEventListener('show.bs.modal', event => {
+  // Button that triggered the modal
+  const button = event.relatedTarget
+})
+
+$('#contactForm').submit(function () {
+    $('#contactModal').modal('toggle');
+    $('#contactSuccessAlert').addClass('show');
+    setTimeout(function () {      
+        $('#contactSuccessAlert').removeClass('show');         
+    }, 8000);
+    return false;
+});
