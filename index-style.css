@@ -60,9 +60,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p{
 }
 
 #messageButton{
-    background: radial-gradient(black, transparent);
-    padding: 16px;
-    border-radius: 50%;
+    background-image: radial-gradient(circle, rgb(0, 0, 0), rgb(0, 0, 0, 0.1));
+    padding: 32px;
 }
 
 #bio-pic{
