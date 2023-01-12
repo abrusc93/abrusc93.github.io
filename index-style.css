@@ -88,10 +88,6 @@ footer{
     margin-bottom: 50pt;
 }
 
-#contactModal .modal-content{
-    background-color: black;
-}
-
 input[type=text], input[type=email], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 

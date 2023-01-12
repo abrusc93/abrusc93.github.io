@@ -72,12 +72,6 @@ photoDisplayModal.addEventListener('show.bs.modal', event => {
   document.getElementById("modalImage").src = imgSrc;
 })
 
-const contactModal = document.getElementById('contactModal')
-contactModal.addEventListener('show.bs.modal', event => {
-  // Button that triggered the modal
-  const button = event.relatedTarget
-})
-
 $('#contactForm').submit(function () {
     $('#contactModal').modal('toggle');
     $('#contactSuccessAlert').addClass('show');
