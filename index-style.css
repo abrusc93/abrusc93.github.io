@@ -147,6 +147,12 @@ input[type=submit]:hover {
 
 }
 
+@media only screen and (max-width: 475px) {
+    #musichootGithub{
+        margin-bottom: 1em;
+    }
+}
+
 @media only screen and (max-width: 992px) and (min-width: 768px){
     #logo-name{
         display: none;
